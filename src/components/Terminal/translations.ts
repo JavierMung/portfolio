@@ -43,7 +43,7 @@ export const translations: Record<LangName, Translations> = {
             "",
             "  Welcome, I'm Javier, a software engineer passionate about building modern web applications.",
             "",
-            "     COMMANDS:  help | about | projects | skills | contact | theme | lang",
+            "     COMMANDS:  help | about | projects | skills | theme | lang",
             "     Type 'help' for more commands. Enjoy the experience!",
         ],
         about: (age: number) => [
