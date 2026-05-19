@@ -129,8 +129,8 @@ export default function Terminal() {
                 return t.about(AGE() - 1);
             case "projects":
                 return t.projects;
-            case "contact":
-                return [t.contactEmail, t.contactSubject, t.contactMessage];
+            // case "contact":
+            //     return [t.contactEmail, t.contactSubject, t.contactMessage];
             case "skills":
                 return t.skills;
             default:
@@ -178,7 +178,7 @@ export default function Terminal() {
         setHistory([
             {
                 prompt: "whoami",
-                response: "",
+                response: GetResponse("whoami"),
                 type: "text"
             }
         ]);
@@ -372,12 +372,13 @@ export default function Terminal() {
                                     else if (e.key === "Enter" && prompt === "exit") {
                                         handleClose();
                                     }
+                                    /*
                                     else if (e.key === "Enter" && prompt === "contact") {
                                         setHistory([...history, { prompt: prompt, response: GetResponse(prompt), type: "input" }]);
                                         setPrompt("");
                                         setIsInputVisible(false);
                                         setTempHistory([]);
-                                    }
+                                    }*/
                                     else if (e.key === 'Enter') {
                                         setHistory([...history, { prompt: prompt, response: GetResponse(prompt), type: "text" }]);
                                         setPrompt("");

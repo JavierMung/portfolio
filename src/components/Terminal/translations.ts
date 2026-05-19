@@ -23,7 +23,7 @@ export interface Translations {
 
 export const translations: Record<LangName, Translations> = {
     en: {
-        help: "Available commands: help, whoami, about, projects, skills, contact, theme, lang, clear, exit",
+        help: "Available commands: help, whoami, about, projects, skills, theme, lang, clear, exit",
         exit: "Exiting terminal...",
         commandNotFound: "Command not found. Type 'help' to see available commands.",
         closeConfirm: "Are you sure you want to close the terminal?",
