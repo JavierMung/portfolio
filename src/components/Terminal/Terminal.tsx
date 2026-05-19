@@ -145,7 +145,7 @@ export default function Terminal() {
         }
     ]);
     const [tempHistory, setTempHistory] = useState<string[]>([]);
-    const [historyIndex, setHistoryIndex] = useState(null);
+    const [historyIndex, setHistoryIndex] = useState<number | null>(null);
     const inputRef = useRef<HTMLInputElement>(null);
     const USER = "javiermunguia.dev";
     const AGE = () => {
